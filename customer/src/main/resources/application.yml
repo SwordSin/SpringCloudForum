@@ -1,0 +1,10 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    # 微服务名称
+    name: forum-customer
+
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
