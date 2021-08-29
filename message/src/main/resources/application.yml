@@ -1,12 +1,10 @@
 server:
-  port: 8101
+  port: 8102
 
 spring:
   application:
-    # 微服务名称
-    name: forum-customer
-#  autoconfigure:
-#    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    name: forum-message
+
 eureka:
   client:
     #表示是否将自己注册进EurekaServer默认为true
