@@ -1,5 +1,5 @@
 server:
-  port: 8101
+  port: 8103
 
 spring:
   application:
@@ -7,6 +7,7 @@ spring:
     name: forum-customer
 #  autoconfigure:
 #    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
 eureka:
   client:
     #表示是否将自己注册进EurekaServer默认为true
@@ -17,5 +18,5 @@ eureka:
 #      defaultZone: http://localhost:7001/eureka #单机版
       defaultZone: http://eureka02.com:7002/eureka,http://eureka01.com:7001/eureka
   instance:
-    instance-id: customer01
+    instance-id: customer02
     prefer-ip-address: true

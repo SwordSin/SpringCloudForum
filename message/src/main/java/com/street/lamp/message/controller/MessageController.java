@@ -2,7 +2,6 @@ package com.street.lamp.message.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
@@ -12,7 +11,7 @@ import javax.annotation.Resource;
 @Controller
 @RequestMapping("/message")
 public class MessageController {
-    private final String CUSTOMER_URL = "http://localhost:8101";
+    private final String CUSTOMER_URL = "http://FORUM-CUSTOMER";
 
     @Resource
     RestTemplate restTemplate;
