@@ -6,7 +6,7 @@ server:
 #服务别名----注册zookeeper到注册中心名称
 spring:
   application:
-    name: spring-cloud-customer04
+    name: spring-cloud-customer
   cloud:
     zookeeper:
-      connect-string: 172.20.134.191:2181
+      connect-string: localhost:2181
