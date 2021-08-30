@@ -13,6 +13,7 @@
     <module>eurake01</module>
       <module>eurake02</module>
       <module>customer02</module>
+      <module>customer03</module>
   </modules>
   <packaging>pom</packaging>
 
