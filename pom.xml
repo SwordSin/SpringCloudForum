@@ -15,6 +15,9 @@
       <module>customer02</module>
       <module>customer03</module>
       <module>customer04</module>
+      <module>customer05</module>
+    <module>customer06</module>
+    <module>message-consul</module>
   </modules>
   <packaging>pom</packaging>
 
