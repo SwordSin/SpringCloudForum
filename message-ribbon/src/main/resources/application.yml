@@ -1,0 +1,25 @@
+
+#8004表示注册到zookeeper服务器的支付服务提供者端口号
+server:
+  port: 8109
+
+#服务别名----注册zookeeper到注册中心名称
+spring:
+  application:
+    name: spring-cloud-message
+  cloud:
+    consul:
+      host: localhost
+      prot: 8500
+      discovery:
+        service-name: ${spring.application.name}
+# ribbon负载均衡策略
+spring-cloud-customer:
+  ribbon:
+  #  ConnectTimeout: 1000 #服务请求连接超时时间（毫秒）
+  #  ReadTimeout: 3000 #服务请求处理超时时间（毫秒）
+  #  OkToRetryOnAllOperations: true #对超时请求启用重试机制
+  #  MaxAutoRetriesNextServer: 1 #切换重试实例的最大个数
+  #  MaxAutoRetries: 1 # 切换实例后重试最大次数
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #修改负载均衡算法
+
